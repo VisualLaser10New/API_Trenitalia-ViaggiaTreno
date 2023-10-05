@@ -13,7 +13,7 @@ class api:
 
 		andamento = 'http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/andamentoTreno/S00245/100/2017-10-04'
 
-		return partenza, arrivo
+		
 	
 	
 		#http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/andamentoTreno/S00245/Wed Oct 04 2023 17:21:03 GMT+0200 (Ora legale dell’Europa centrale)
