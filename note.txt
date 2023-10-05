@@ -1,0 +1,36 @@
+url principale: http://www.viaggiatreno.it/infomobilita
+
+// GET /resteasy/viaggiatreno/partenze/{codiceStazione}/{orario}
+codiceStazione: tutto il codice
+orario di ricerca: Wed Oct 04 2023 17:21:03 GMT+0200 (Ora legale dell’Europa centrale)
+
+ViaggiaTrenoService.getPartenze = function(_params)
+
+// GET /resteasy/viaggiatreno/arrivi/{codiceStazione}/{orario}
+codiceStazione: tutto il codice
+orario di ricerca: Wed Oct 04 2023 17:21:03 GMT+0200 (Ora legale dell’Europa centrale)
+
+ViaggiaTrenoService.getArrivi = function(_params)
+
+
+// GET /resteasy/viaggiatreno/soluzioniViaggioNew/{codLocOrig}/{codLocDest}/{date}
+codLocOrig: solo il numero senza S000 davanti
+codLocDest: solo il numero senza S000 davanti
+date: 2023-10-05T00:00:00 con formato YYYY-MM-DDTHH:MM:SS
+
+
+//GET /resteasy/viaggiatreno/autocompletaStazioneImpostaViaggio/{nomeStazione}
+ritorna anche inserendo le prime lettere della stazione un elenco:
+es: Mil
+MILANO CENTRALE|S01700
+MILANO AFFORI|S01078
+MILANO BOVISA FNM|S01642
+MILANO BRUZZANO|S01079
+MILANO CERTOSA|S01640
+...
+
+// GET /resteasy/viaggiatreno/andamentoTreno/{codOrigine}/{numeroTreno}/{dataPartenza}
+codOrigine: intero codice stazione di dataPartenza
+numeroTreno: numero del treno, solo le cifre
+dataPartenza: formato calcolato in secondi dal 1970 (unix time) con gtm +2
+
