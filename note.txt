@@ -34,3 +34,10 @@ codOrigine: intero codice stazione di dataPartenza
 numeroTreno: numero del treno, solo le cifre
 dataPartenza: formato calcolato in secondi dal 1970 (unix time) con gtm +2
 
+
+// GET /resteasy/viaggiatreno/elencoStazioni/{regione}
+regione: id della regione
+
+// GET /resteasy/viaggiatreno/cercaStazione/{nomeStazione}
+nomeStazione: nome della stazione, anche le prime lettere
+
